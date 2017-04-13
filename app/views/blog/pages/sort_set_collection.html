@@ -1,0 +1,31 @@
+If your set is not TreeSet implementation, you have the following options to sort your set collection.
+For example, suppose that you have a HashSet collection as shown below;
+<pre class="lang:java decode:true" title="Initialization">Set hashSet = new HashSet();
+hashSet.add("murat");
+hashSet.add("ayse");
+hashSet.add("oguz");</pre>
+You can one of these methods to sort your set collection;
+
+1. One method is to create a new TreeSet whose constructor has any collection type.
+<pre class="lang:java decode:true" title="TreeSet kullanımı">TreeSet treeSet = new TreeSet(hashSet);
+
+for (final String element : treeSet) {
+System.out.println(element);
+}</pre>
+2. Another option is to create a new ArrayList whose constructor has any collection type and sort this List via Collections.sort(List) method.
+<pre class="lang:java decode:true" title="Collections.sort">ist list = new ArrayList(hashSet);
+Collections.sort(list);
+
+for (final String element : list) {
+System.out.println(element);
+}</pre>
+<em id="__mceDel">3. Other option is to convert this set into array through the use of toArray method and sort this array via Arrays.sort(Object[]) method.</em>
+<pre class="lang:java decode:true" title="Arrays.sort">Object[] array = hashSet.toArray();
+Arrays.sort(array);
+
+for (final Object element : array) {
+System.out.println(element);
+}</pre>
+All these options shown above will have the same output.
+
+<a href="http://www.patrickhaslamracing.com/">spielcasino online</a>

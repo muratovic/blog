@@ -1,0 +1,33 @@
+Highcharts API doesnt provide a legend operation like SELECT/DESELECT ALL series, thus you must implement your own click event handler.
+It means that you should traverse all series elements and change their visibility respectively.
+There are some methods to change visibility of a series. These are hide(), show(), and setVisible(Boolean visible, [Boolean redraw]).
+While traversing, if you use hide()/show() methods for each series, these methods will cause to redraw the graphic for each series. So, the performance is extremely reduced when using these methods.
+However, if you use setVisible(Boolean visible, [Boolean redraw]) method with false value of redraw, it will not redraw the graphic for each iteration and your performance will increase in a visible way.
+
+So, the event handler of SELECT/DESELECT ALL legend click should be implemented as follows;
+
+ 
+<pre class="lang:js decode:true " title="eventHandler" >events: {
+            legendItemClick: function (event) {
+                var seriesIndex = this.index;
+                var visibility = this.visible;
+                var allSeries = this.chart.series;
+                if (this.name == 'DESELECT/SELECT ALL') {
+                    for (var i = 0; i &lt; allSeries.length; i++) {
+                        var currentSeries = allSeries[i];
+                        if (currentSeries.index != seriesIndex) {
+                            if (this.visible) {
+                                if (currentSeries.visible) {
+                                    currentSeries.setVisible(false, false);
+                                }
+                            } else {
+                                if (!currentSeries.visible) {
+                                    currentSeries.setVisible(true, false);
+                                }
+                            }
+                        }
+                    }
+                    this.chart.redraw();
+                }
+            }
+        }</pre> 

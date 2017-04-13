@@ -1,0 +1,11 @@
+“Two declarations cause a collision in the ObjectFactory class” hatasının neden kaynaklandığını ve çözüm yöntemlerinden bazılarını <a href="http://popularjava.wordpress.com/2011/10/25/two-declarations-cause-a-collision-in-the-objectfactory-class-hatasi-ve-cozumu">şu</a> yazımda paylaşmıştım.
+Anlattığım gibi, bu sorun aynı WSDL içerisinde birden fazla aynı isimli elemanın client kodlarının aynı paket altına atılmaya çalışılmasından kaynaklanmaktadır.
+
+Bu durum geçen gün karşılaştığım ve çözüm yöntemini çok araştırdığım sorundan da kaynaklanabilmektedir.
+Örneğin; WSDL içerisinde <strong>“StatusCode”</strong> ve <strong>“Status_Code”</strong> isminde 2 farklı element olduğunu varsayalım. JAX-WS wsimportu koşularak(herhangi bir extra configurasyon yapılmadan) WSDL’dan client kodu generate edilmek istendiğinde, WSDL içerisindeki bu 2 farklı element wsimport tarafından aynı element olarak algılanmaktadır. Dolayısıyla yukarıdaki hata vermektedir. Çünkü, wsimport ekstra bir configurasyon yapılmadan koşulduğunda, WSDL içerisinde geçen element ve type isimlerindeki altçizgiler otomatik olarak kaldırılmaktadır. Bunu engellemek için wsimport komutu koşulurken <strong>jaxws_default_binding_xml</strong> configurasyon dosyası verilerek, wsimportun WSDL içerisindeki altçizgileri kaldırması engellenmektedir.
+Bunun için koşulacak wsimport komutunun nasıl koşulacağı ve jaxws_default_binding_xml dosyasının içeriği aşağıda gösterilmiştir.
+
+<strong>Koşulacak wsimport komutu</strong>
+wsimport wsdl_location -s source_directory <strong>-b jaxws_default_binding_xml</strong>
+
+<strong>jaxws_default_binding_xml dosyasının içeriği</strong>

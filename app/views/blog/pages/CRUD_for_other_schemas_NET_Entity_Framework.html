@@ -1,0 +1,16 @@
+In .NET Entity Framework, when you create a model from Oracle database, you should give an username and password info about the database where you wish to connect.
+This information is stored in connection string tab in app.config file as shown below.
+
+<pre class="lang:xhtml decode:true " title="connectionStrings"> &lt;connectionStrings&gt;
+        &lt;add name="Entities" connectionString="metadata=res://*/Model.csdl|res://*/Model.ssdl|res://*/Model.msl;provider=Oracle.DataAccess.Client;provider connection string=&amp;quot;DATA SOURCE=localhost:1561/EXAMPLEDB;PASSWORD=yourPass;USER ID=yourUsername&amp;quot;" providerName="System.Data.EntityClient" /&gt;
+    &lt;/connectionStrings&gt;</pre>
+
+As you can see from the configuration xml, this doesnt include about the schema name. It means that you can work with the tables only in the schema corresponding to your username.
+
+In order to be able to work with different tabless from another schemas, you should follow this steps in Visual Studio.
+<ol>
+	<li>Open Server explorer, select your connection and click right.</li>
+	<li>Click on "Filters.." tab, select(if not selected) Displayed schemas, then add more schemas to your schemas list.</li>
+	<li>Dont forget to click on Update button and Ok to save changes on your connection.</li>
+</ol>
+Now when you add a new ADO.Net Entity Data Model, you will see all tables from your schemas and you can work with the other tables from another schemas.
