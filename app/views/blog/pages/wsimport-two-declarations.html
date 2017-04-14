@@ -1,23 +1,26 @@
-Wsimport komutu koşulurken karşılaştığım bir sorunun çözümünü paylaşmak istedim. Sorun, “Two declarations cause a collision in the ObjectFactory class” hatasıdır.
-Bu hatanın sebebi, aynı WSDL içerisinde farklı namespace’lerde aynı isimli element/type’ların geçmesidir. Wsimport komutuyla paket adı verildiğinde, oluşturulan client kodları aynı package içerisine atılmaya çalışılmaktadır, Dolayısıyla, farklı paketler olması gereken aynı isimli type’lar, aynı paket içerisine alınmaya zorlanmaktadır.
+<p>Wsimport komutu koşulurken karşılaştığım bir sorunun çözümünü paylaşmak istedim. Sorun, “Two declarations cause a collision in the ObjectFactory class” hatasıdır.</p>
+<p>Bu hatanın sebebi, aynı WSDL içerisinde farklı namespace’lerde aynı isimli element/type’ların geçmesidir. Wsimport komutuyla paket adı verildiğinde, oluşturulan client kodları aynı package içerisine atılmaya çalışılmaktadır, Dolayısıyla, farklı paketler olması gereken aynı isimli type’lar, aynı paket içerisine alınmaya zorlanmaktadır.</p>
 
-wsimport komutuna client kodlarının ekleneceği package adı verilerek aşağıdaki gibi koşulduğunda bu hata oluşmaktadır.
+<p>wsimport komutuna client kodlarının ekleneceği package adı verilerek aşağıdaki gibi koşulduğunda bu hata oluşmaktadır.</p>
+
 <code>
     <pre class="language-javascript" prism>
         jaxws-ri/bin/wsimport wsdl_location -s source_directory -p -package_name
     </pre>
 </code>
 
-JAX-WS’de wsimport komutu package adı verilmeden aşağıdaki gibi koşulduğunda herhangi bir hata oluşmamaktadır.
+<p>JAX-WS’de wsimport komutu package adı verilmeden aşağıdaki gibi koşulduğunda herhangi bir hata oluşmamaktadır.</>
+
 <code>
     <pre class="language-javascript" prism>
         jaxws-ri/bin/wsimport wsdl_location -s source_directory
     </pre>
 </code>
 
-<em>Bu sayede</em>, aynı isme sahip fakat farklı namespace’deki elemanların aynı pakete konulmasını zorlamak yerine namespace’lere göre otomatik olarak paketlerin oluşturulması sağlanmıştır. Dolayısıyla, aynı isme sahip fakat farklı namespace’deki elemanlar namespace’lerine karşılık gelen paketlerde yer alması sağlanmıştır.
+<p>Bu sayede, aynı isme sahip fakat farklı namespace’deki elemanların aynı pakete konulmasını zorlamak yerine namespace’lere göre otomatik olarak paketlerin oluşturulması sağlanmıştır. Dolayısıyla, aynı isme sahip fakat farklı namespace’deki elemanlar namespace’lerine karşılık gelen paketlerde yer alması sağlanmıştır.</p>
 
-Yukarıdaki çözüm yöntemi hatanızı hala almanıza engel olmuyorsa, kullanılacak olan <p>2. bir yöntem</p> vardır. Bu yöntem de WSDL’i compile edebilmemizi sağlayacaktır. 2. yöntem de aşağıdaki gibi koşulabilir.
+<p>Yukarıdaki çözüm yöntemi hatanızı hala almanıza engel olmuyorsa, kullanılacak olan <strong>2. bir yöntem</strong> vardır. Bu yöntem de WSDL’i compile edebilmemizi sağlayacaktır. 2. yöntem de aşağıdaki gibi koşulabilir.</p>
+
 <code>
     <pre class="language-javascript" prism>
         jaxws-ri/bin/wsimport wsdl_location -s source_directory -B-XautoNameResolution.
