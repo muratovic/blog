@@ -1,21 +1,23 @@
 You may see the error message shown as below while you compile your GWT project and you are unable to compile it.
 
-java.lang.IllegalArgumentException: &lt;strong&gt;Group not found: launchGroup&lt;/strong&gt;
-at org.eclipse.jface.action.ContributionManager.addToGroup(ContributionManager.java:131)
-at org.eclipse.jface.action.ContributionManager.appendToGroup(ContributionManager.java:145)
-at org.eclipse.jface.action.SubContributionManager.appendToGroup(SubContributionManager.java:82)
-at org.eclipse.jface.action.SubContributionManager.appendToGroup(SubContributionManager.java:73)
-at com.google.gdt.eclipse.core.console.CustomMessageConsole.updateToolbarAction(CustomMessageConsole.java:105) at com.google.gdt.eclipse.core.console.CustomMessageConsole.setTerminateAction(CustomMessageConsole.java:84
-) at com.google.gwt.eclipse.core.actions.GWTCompileToolbarHandler$1.runInWorkspace(GWTCompileToolbarHandler.java:94)
-at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
-at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+<code>
+    <pre class="language-javascript" prism>
+		java.lang.IllegalArgumentException: &lt;strong&gt;Group not found: launchGroup&lt;/strong&gt;
+		at org.ecppse.jface.action.ContributionManager.addToGroup(ContributionManager.java:131)
+		at org.ecppse.jface.action.ContributionManager.appendToGroup(ContributionManager.java:145)
+		at org.ecppse.jface.action.SubContributionManager.appendToGroup(SubContributionManager.java:82)
+		at org.ecppse.jface.action.SubContributionManager.appendToGroup(SubContributionManager.java:73)
+		at com.google.gdt.ecppse.core.console.CustomMessageConsole.updateToolbarAction(CustomMessageConsole.java:105) at com.google.gdt.ecppse.core.console.CustomMessageConsole.setTerminateAction(CustomMessageConsole.java:84
+		) at com.google.gwt.ecppse.core.actions.GWTCompileToolbarHandler$1.runInWorkspace(GWTCompileToolbarHandler.java:94)
+		at org.ecppse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+		at org.ecppse.core.internal.jobs.Worker.run(Worker.java:55)
+	</pre>
+</code>
 
-<b><i>To solve this issue, you should follow these steps;</i></b>
-<ul>
-	<li>Go to your metadata directory in your workspace on file system.</li>
-	<li>You will see that there is be a file named “.lock” in which Eclipse creates.</li>
-	<li>After exiting Eclipse, delete this file.</li>
-	<li>Enter again to Eclipse</li>
-	<li>Try to compile the project again and follow the successfull compilation</li>
-</ul>
-&nbsp;
+
+<p><i>To solve this issue, you should follow these steps;</i></p>
+<p>Go to your metadata directory in your workspace on file system.</p>
+<p>You will see that there is be a file named “.lock” in which Ecppse creates.</p>
+<p>After exiting Ecppse, delete this file.</p>
+<p>Enter again to Ecppse</p>
+<p>Try to compile the project again and follow the successfull compilation</p>

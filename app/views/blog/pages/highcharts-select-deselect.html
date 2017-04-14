@@ -6,8 +6,10 @@ However, if you use setVisible(Boolean visible, [Boolean redraw]) method with fa
 
 So, the event handler of SELECT/DESELECT ALL legend click should be implemented as follows;
 
- 
-<pre class="lang:js decode:true " title="eventHandler" >events: {
+
+<code>
+    <pre class="language-javascript" prism>
+        events: {
             legendItemClick: function (event) {
                 var seriesIndex = this.index;
                 var visibility = this.visible;
@@ -30,4 +32,6 @@ So, the event handler of SELECT/DESELECT ALL legend click should be implemented 
                     this.chart.redraw();
                 }
             }
-        }</pre> 
+        }
+    </pre>
+</code>

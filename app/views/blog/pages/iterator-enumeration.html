@@ -1,5 +1,5 @@
-<strong>Both interfaces</strong> provide traverse the collection and fetch objects from it.
-<strong>But</strong>, there are 2 differences between Iterator and Enumeration interface.
+<p><strong>Both interfaces</strong> provide traverse the collection and fetch objects from it.
+<p><strong>But</strong>, there are 2 differences between Iterator and Enumeration interface.</p>
 
 <h3>1.Iterator has remove() method which can delete the current node while traversing the collection.</h3>
 
@@ -13,7 +13,7 @@
     </code>
 </pre>
 
-<strong>Enumeration</strong> interface doesnt have this method. Enumeration acts as Read-Only interface.
+<p><strong>Enumeration</strong> interface doesnt have this method. Enumeration acts as Read-Only interface.</p>
 
 <pre>
     <code class="language-javascript" prism>
@@ -24,7 +24,7 @@
     </code>
 </pre>
 
-<h3>
-<strong>2.</strong> <strong>Iterator</strong> is more secure and safe compared with Enumeration interface. </h3>
-Iterator doesnt allow multiple threads modify the collection at the same time. Therefore, ConcurrentModificationException is not thrown while traversing the collection through the use of Iterator interface.
-Whereas <strong>Enumeration</strong> interface cannot provide this feature. Enumeration is not thread-safe interface.
+<h3>2. Iterator is more secure and safe compared with Enumeration interface. </h3>
+
+<p>Iterator doesnt allow multiple threads modify the collection at the same time. Therefore, ConcurrentModificationException is not thrown while traversing the collection through the use of Iterator interface.
+    Whereas <strong>Enumeration</strong> interface cannot provide this feature. Enumeration is not thread-safe interface. </p>

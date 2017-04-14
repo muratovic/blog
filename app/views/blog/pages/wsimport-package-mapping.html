@@ -2,17 +2,21 @@ Daha önceki yazılarımda da belirttiğim gibi, wsimport komutu koşulurken <st
 <strong>Ancak</strong>, wsimport komutu koşulurken istenirse ek configurasyon yapılarak, belli namespaceler için namespace adında bir paket oluşturması yerine istenen paket adı verilerek, o namespace ile ilgili sınıfları bu paket altına atabilmektedir.
 Bu konfigurasyonu sağlayabilmek için daha önceki yazılarımda da belirttiğim gibi, wsimport komutunun aşağıdaki şekilde koşulması gerekmektedir.
 
-<strong>Koşulacak wsimport komutu</strong>
+<p>Koşulacak wsimport komutu</p>
 
-wsimport wsdl_location -s source_directory <strong>-b jaxws_default_binding_xml</strong>
+<code>
+    <pre class="language-javascript" prism>
+        wsimport wsdl_location -s source_directory -b jaxws_default_binding_xml
+    </pre>
+</code>
 
-<strong>jaxws_default_binding_xml dosyasının içeriği</strong>
-<p style="text-align: center;"><a href="http://www.popularjava.net/wp-content/uploads/jxb.jpg"><img class=" wp-image-17 aligncenter" style="border: 1px solid black;" alt="jxb" src="http://www.popularjava.net/wp-content/uploads/jxb-300x77.jpg" width="300" height="77" /></a></p>
-&nbsp;
+<p>jaxws_default_binding_xml dosyasının içeriği</p>
+
+<img alt="Custom Select" src="/img/static/posts/jxb.jpg">
 
 Burada namespace packing mapping yapılacak olan wsdl, example.wsdl dosyasıdır ve <strong>&lt;jxb:bindings&gt;</strong>etiketinin <strong>schemaLocation</strong><b> </b>değeri olarak gösterilmiştir. Burada kullanılan <strong>schema2</strong> değeri ise, mapping yapılacak olan namespace’in wsdl içerisinde kaçıncı sıradaki namespace olarak tanımlandığını ifade etmektedir.
 
-<strong>node</strong><b> </b>olarak belirtilen attribute’un değeri ise, hangi namespace için mapping yapılacağını ifade etmektedir ve wsdl içerisinde schema içerisinde bulunan targetNamespace’i ifade etmektedir.
+<strong>node</strong>olarak belirtilen attribute’un değeri ise, hangi namespace için mapping yapılacağını ifade etmektedir ve wsdl içerisinde schema içerisinde bulunan targetNamespace’i ifade etmektedir.
 
 &lt;jxb:bindings&gt; etiketi içerisinde kullanılan <strong>&lt;jxb:schemaBindings&gt;</strong><b> </b>etiketinde ise, <strong>&lt;jxb:package&gt;</strong><b> </b>ile targetNamespace ile ifade edilen namespace ismine sahip sınıfların client kodlarının konulacağı paketi ifade etmektedir.
 

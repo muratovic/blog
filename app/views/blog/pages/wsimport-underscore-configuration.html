@@ -5,7 +5,13 @@ Bu durum geçen gün karşılaştığım ve çözüm yöntemini çok araştırd�
 Örneğin; WSDL içerisinde <strong>“StatusCode”</strong> ve <strong>“Status_Code”</strong> isminde 2 farklı element olduğunu varsayalım. JAX-WS wsimportu koşularak(herhangi bir extra configurasyon yapılmadan) WSDL’dan client kodu generate edilmek istendiğinde, WSDL içerisindeki bu 2 farklı element wsimport tarafından aynı element olarak algılanmaktadır. Dolayısıyla yukarıdaki hata vermektedir. Çünkü, wsimport ekstra bir configurasyon yapılmadan koşulduğunda, WSDL içerisinde geçen element ve type isimlerindeki altçizgiler otomatik olarak kaldırılmaktadır. Bunu engellemek için wsimport komutu koşulurken <strong>jaxws_default_binding_xml</strong> configurasyon dosyası verilerek, wsimportun WSDL içerisindeki altçizgileri kaldırması engellenmektedir.
 Bunun için koşulacak wsimport komutunun nasıl koşulacağı ve jaxws_default_binding_xml dosyasının içeriği aşağıda gösterilmiştir.
 
-<strong>Koşulacak wsimport komutu</strong>
-wsimport wsdl_location -s source_directory <strong>-b jaxws_default_binding_xml</strong>
+<p>Koşulacak wsimport komutu</p>
 
-<strong>jaxws_default_binding_xml dosyasının içeriği</strong>
+<code>
+    <pre class="language-javascript" prism>
+        wsimport wsdl_location -s source_directory <strong>-b jaxws_default_binding_xml</strong>
+    </pre>
+</code>
+
+
+<p>jaxws_default_binding_xml dosyasının içeriği</p>
