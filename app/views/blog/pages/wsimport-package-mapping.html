@@ -1,6 +1,7 @@
-Daha önceki yazılarımda da belirttiğim gibi, wsimport komutu koşulurken <strong>“-p package_name”</strong> parametresi verildiğinde tüm client kodlarını temsil eden tüm sınıflar verilen package_name adinda oluşturulan pakete atılmaktadır. <strong>“-p package_name”</strong> parametresi verilmediğinde ise, WSDL içerisindeki her bir namespace için otomatik olarak bir paket oluşturulmakta ve client kodlarını temsil eden sınıflar bu paketlere atılmaktadır.
-<strong>Ancak</strong>, wsimport komutu koşulurken istenirse ek configurasyon yapılarak, belli namespaceler için namespace adında bir paket oluşturması yerine istenen paket adı verilerek, o namespace ile ilgili sınıfları bu paket altına atabilmektedir.
-Bu konfigurasyonu sağlayabilmek için daha önceki yazılarımda da belirttiğim gibi, wsimport komutunun aşağıdaki şekilde koşulması gerekmektedir.
+<p>Daha önceki yazılarımda da belirttiğim gibi, wsimport komutu koşulurken <strong>“-p package_name”</strong> parametresi verildiğinde tüm client kodlarını temsil eden tüm sınıflar verilen package_name adinda oluşturulan pakete atılmaktadır. <strong>“-p package_name”</strong> parametresi verilmediğinde ise, WSDL içerisindeki her bir namespace için otomatik olarak bir paket oluşturulmakta ve client kodlarını temsil eden sınıflar bu paketlere atılmaktadır.
+</p>
+<p><strong>Ancak</strong>, wsimport komutu koşulurken istenirse ek configurasyon yapılarak, belli namespaceler için namespace adında bir paket oluşturması yerine istenen paket adı verilerek, o namespace ile ilgili sınıfları bu paket altına atabilmektedir.
+Bu konfigurasyonu sağlayabilmek için daha önceki yazılarımda da belirttiğim gibi, wsimport komutunun aşağıdaki şekilde koşulması gerekmektedir.</p>
 
 <p>Koşulacak wsimport komutu</p>
 
@@ -14,14 +15,12 @@ Bu konfigurasyonu sağlayabilmek için daha önceki yazılarımda da belirttiği
 
 <img alt="Custom Select" src="/img/static/posts/jxb.jpg">
 
-Burada namespace packing mapping yapılacak olan wsdl, example.wsdl dosyasıdır ve <strong>&lt;jxb:bindings&gt;</strong>etiketinin <strong>schemaLocation</strong><b> </b>değeri olarak gösterilmiştir. Burada kullanılan <strong>schema2</strong> değeri ise, mapping yapılacak olan namespace’in wsdl içerisinde kaçıncı sıradaki namespace olarak tanımlandığını ifade etmektedir.
+<p>Burada namespace packing mapping yapılacak olan wsdl, example.wsdl dosyasıdır ve <strong>&lt;jxb:bindings&gt;</strong>etiketinin <strong>schemaLocation</strong><b> </b>değeri olarak gösterilmiştir. Burada kullanılan <strong>schema2</strong> değeri ise, mapping yapılacak olan namespace’in wsdl içerisinde kaçıncı sıradaki namespace olarak tanımlandığını ifade etmektedir.</p>
 
-<strong>node</strong>olarak belirtilen attribute’un değeri ise, hangi namespace için mapping yapılacağını ifade etmektedir ve wsdl içerisinde schema içerisinde bulunan targetNamespace’i ifade etmektedir.
+<p><strong>node</strong> olarak belirtilen attribute’un değeri ise, hangi namespace için mapping yapılacağını ifade etmektedir ve wsdl içerisinde schema içerisinde bulunan targetNamespace’i ifade etmektedir.</p>
 
-&lt;jxb:bindings&gt; etiketi içerisinde kullanılan <strong>&lt;jxb:schemaBindings&gt;</strong><b> </b>etiketinde ise, <strong>&lt;jxb:package&gt;</strong><b> </b>ile targetNamespace ile ifade edilen namespace ismine sahip sınıfların client kodlarının konulacağı paketi ifade etmektedir.
-
+<p>&lt;jxb:bindings&gt; etiketi içerisinde kullanılan <strong>&lt;jxb:schemaBindings&gt;</strong><b> </b>etiketinde ise, <strong>&lt;jxb:package&gt;</strong><b> </b>ile targetNamespace ile ifade edilen namespace ismine sahip sınıfların client kodlarının konulacağı paketi ifade etmektedir.
 Yani, örneğimize göre, WSDL içerisinde <strong>namespaceLocation(</strong>örneğin; “http://www.abc.com”<strong>) </strong>namespace’ine sahip tüm element’ler için oluşturulacak olan client kodlarını temsil eden sınıflar <strong>com.wsimported.create</strong> adlı paket içerisine konulacaktır.
-
-Diğer namespace’ler için ise, her bir namespace için, o namespace adında bir paket oluşturulacak ve client kodları otomatik olarak ilgili paketler altına konulacaktır.
+Diğer namespace’ler için ise, her bir namespace için, o namespace adında bir paket oluşturulacak ve client kodları otomatik olarak ilgili paketler altına konulacaktır.</p>
 
 &nbsp;
