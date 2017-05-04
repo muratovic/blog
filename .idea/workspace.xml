@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5b1c4e1a-d084-43b2-a143-c3bd0d6627b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/blog/pages/wsimport-package-mapping.html" afterPath="$PROJECT_DIR$/app/views/blog/pages/wsimport-package-mapping.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/blog/pages/wsimport-two-declarations.html" afterPath="$PROJECT_DIR$/app/views/blog/pages/wsimport-two-declarations.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/blog/pages/wsimport-underscore-configuration.html" afterPath="$PROJECT_DIR$/app/views/blog/pages/wsimport-underscore-configuration.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/blog/pages/most-used-eclipse-shortcuts.html" afterPath="$PROJECT_DIR$/app/views/blog/pages/most-used-eclipse-shortcuts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/blog/pages/sort-set-collection.html" afterPath="$PROJECT_DIR$/app/views/blog/pages/sort-set-collection.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,21 +16,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gwt-compile-problem.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/blog/pages/gwt-compile-problem.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="wsimport-two-declarations.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/blog/pages/wsimport-two-declarations.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="most-used-eclipse-shortcuts.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="most-used-eclipse-shortcuts.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/blog/pages/most-used-eclipse-shortcuts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="92" />
+            <state relative-caret-position="525">
+              <caret line="35" column="11" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -94,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wsimport-underscore-configuration.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wsimport-underscore-configuration.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/blog/pages/wsimport-underscore-configuration.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,7 +97,17 @@
         <entry file="file://$PROJECT_DIR$/app/views/blog/pages/unused/neden-custom-select-kullanmamaliyiz.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="72" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="72" />
+              <caret line="4" column="72" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sitemi-yenileme-maceram.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/blog/pages/unused/sitemi-yenileme-maceram.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="788">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -127,8 +126,8 @@
       <file leaf-file-name="sort-set-collection.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/blog/pages/sort-set-collection.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="50" column="63" lean-forward="false" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
+            <state relative-caret-position="720">
+              <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -193,9 +192,13 @@
       <find>language-markup</find>
       <find>li</find>
       <find>strong</find>
+      <find>*</find>
+      <find>&lt;/p&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>p</replace>
+      <replace />
+      <replace>&lt;br /&gt;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -223,13 +226,14 @@
         <option value="$PROJECT_DIR$/app/views/blog/pages/crud-for-other-schemas-entity-framework.html" />
         <option value="$PROJECT_DIR$/app/views/blog/pages/gwt-compile-problem.html" />
         <option value="$PROJECT_DIR$/app/views/blog/pages/highcharts-select-deselect.html" />
-        <option value="$PROJECT_DIR$/app/views/blog/pages/sort-set-collection.html" />
         <option value="$PROJECT_DIR$/app/views/blog/pages/gwt-reload-page.html" />
         <option value="$PROJECT_DIR$/app/views/blog/pages/api-access-for-google-api.html" />
         <option value="$PROJECT_DIR$/app/views/homepage/homepage.html" />
         <option value="$PROJECT_DIR$/app/views/blog/pages/wsimport-package-mapping.html" />
         <option value="$PROJECT_DIR$/app/views/blog/pages/wsimport-two-declarations.html" />
         <option value="$PROJECT_DIR$/app/views/blog/pages/wsimport-underscore-configuration.html" />
+        <option value="$PROJECT_DIR$/app/views/blog/pages/sort-set-collection.html" />
+        <option value="$PROJECT_DIR$/app/views/blog/pages/most-used-eclipse-shortcuts.html" />
       </list>
     </option>
   </component>
@@ -494,8 +498,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -948,12 +952,13 @@
       <workItem from="1492000093513" duration="616000" />
       <workItem from="1492009489385" duration="1621000" />
       <workItem from="1492084646742" duration="11407000" />
-      <workItem from="1493641975960" duration="1037000" />
+      <workItem from="1493641975960" duration="1222000" />
+      <workItem from="1493924591962" duration="902000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14681000" />
+    <option name="totallyTimeSpent" value="15768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -967,20 +972,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2777778" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16910867" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1187,13 +1192,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blog/pages/unused/sitemi-yenileme-maceram.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/blog/pages/unused/sublime-texti-etkin-kullanma.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -1266,7 +1264,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1299,26 +1296,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blog/pages/most-used-eclipse-shortcuts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/blog/pages/gwt-reload-page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blog/pages/sort-set-collection.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="63" lean-forward="false" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
           <folding />
         </state>
       </provider>
@@ -1355,14 +1336,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blog/pages/unused/neden-custom-select-kullanmamaliyiz.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="72" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/blog/pages/wsimport-package-mapping.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1374,7 +1347,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/blog/pages/wsimport-two-declarations.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1382,7 +1355,39 @@
     <entry file="file://$PROJECT_DIR$/app/views/blog/pages/wsimport-underscore-configuration.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blog/pages/unused/neden-custom-select-kullanmamaliyiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="72" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blog/pages/unused/sitemi-yenileme-maceram.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="788">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blog/pages/sort-set-collection.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blog/pages/most-used-eclipse-shortcuts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="11" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
           <folding />
         </state>
       </provider>
