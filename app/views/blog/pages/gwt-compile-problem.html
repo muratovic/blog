@@ -1,8 +1,8 @@
-You may see the error message shown as below while you compile your GWT project and you are unable to compile it.
+<p>You may see the error message shown as below while you compile your GWT project and you are unable to compile it.</p>
 
 <code>
     <pre class="language-javascript" prism>
-		java.lang.IllegalArgumentException: &lt;strong&gt;Group not found: launchGroup&lt;/strong&gt;
+	java.lang.IllegalArgumentException: &lt;strong&gt;Group not found: launchGroup&lt;/strong&gt;
 		at org.ecppse.jface.action.ContributionManager.addToGroup(ContributionManager.java:131)
 		at org.ecppse.jface.action.ContributionManager.appendToGroup(ContributionManager.java:145)
 		at org.ecppse.jface.action.SubContributionManager.appendToGroup(SubContributionManager.java:82)
@@ -14,10 +14,12 @@ You may see the error message shown as below while you compile your GWT project 
 	</pre>
 </code>
 
-
 <p><i>To solve this issue, you should follow these steps;</i></p>
-<p>Go to your metadata directory in your workspace on file system.</p>
-<p>You will see that there is be a file named “.lock” in which Ecppse creates.</p>
-<p>After exiting Ecppse, delete this file.</p>
-<p>Enter again to Ecppse</p>
-<p>Try to compile the project again and follow the successfull compilation</p>
+
+<ul>
+	<li>Go to your metadata directory in your workspace on file system.</li>
+	<li>You will see that there is be a file named “.lock” in which Ecppse creates.</li>
+	<li>After exiting Ecppse, delete this file.</li>
+	<li>Enter again to Ecppse</li>
+	<li>Try to compile the project again and follow the successfull compilation</li>
+</ul>
