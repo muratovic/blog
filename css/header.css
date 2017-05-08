@@ -1,0 +1,76 @@
+/*
+*
+* Header Styles
+*
+*/
+header {
+  background: linear-gradient(135deg, #52bccc 10%, #52bccc 10%, #8bd6c2 100%);
+}
+header div {
+  overflow: hidden;
+  width: 90%;
+  max-width: 650px;
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 15px 0;
+}
+header div p {
+  float: left;
+}
+header div p a {
+  display: inline-block;
+  padding: 9px 0 0 58px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 60px;
+  position: relative;
+}
+header div p a:hover {
+  color: #fff;
+  transition: all ease 0.5s;
+}
+header div p a:before {
+  content: "\f121";
+  font-family: FontAwesome;
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  transform: rotate(0deg);
+  transition: all ease 0.5s;
+}
+header div p a:hover:before {
+  transform: rotate(360deg);
+  transition: all ease 0.5s;
+}
+header div .about {
+  display: block;
+  float: right;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 20px;
+  border: 2px solid #fff;
+  border-radius: 60px;
+  transition: all ease 0.5s;
+}
+header div .about:hover {
+  background: #fff;
+  color: #30a7b7;
+  transition: all ease 0.5s;
+}
+header h1 {
+  font-family: Pacifico;
+  font-size: 36px;
+  color: #4c9ba1;
+  text-align: center;
+  margin: 25px 0 80px 0;
+}
+header img {
+  display: block;
+  width: 90%;
+  max-width: 650px;
+  margin: 0 auto;
+  max-width: 970px;
+  vertical-align: middle;
+}
