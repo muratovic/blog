@@ -21,7 +21,9 @@
                 Difference Between Iterator and Enumeration in JAVA
             </a>
         </h2>
-        <p>Birçok C tabanlı dilde değişkenler bildirildikleri (declare edildikleri) yerde oluşurlar fakat JavaScript'te durum böyle değildir. Değişkeni nerede ve nasıl yazdığınıza göre değişkeninizin oluştuğu yer belli olur. ECMAScript 6 ile artık değişkenlerin scope'unu (kapsamını) kontrol edebiliyoruz yani bildirildiği yerde oluşmasını sağlayabiliyoruz ama öncelikle hoisting konusuna değinmemiz....</p>
+        <p>
+            <strong>Both interfaces</strong> provide traverse the collection and fetch objects from it.<strong>But</strong>, there are 2 differences between Iterator and Enumeration interface...
+        </p>
         <a href="/iterator-enumeration">DAHA FAZLA</a>
         <span>29 Şubat 2016</span>
     </article>
@@ -31,7 +33,7 @@
                 Wsimport Namespace Package Mapping
             </a>
         </h2>
-        <p>ECMAScript 6 ile birlikte objelere (Object) ve dizilere (Array) Destructuring (Parçalama / Yıkım / Yapıbozum) özelliği geldi. Destructuring, veri yapısını küçük parçalara ayırma işlemidir. Genellikle objeleri ve dizileri tanımladıktan sonra işimize yarayan parçaları içlerinden çekip alırız ve kullanırız. ECMAScript 6 öncesinde bu işi nasıl yaptığımızı görelim...</p>
+        <p>Daha önceki yazılarımda da belirttiğim gibi, wsimport komutu koşulurken <strong>“-p package_name”</strong> parametresi verildiğinde tüm client kodlarını temsil eden tüm sınıflar verilen package_name adinda oluşturulan pakete atılmaktadır. <strong>“-p package_name”</strong> parametresi verilmediğinde ise, WSDL içerisindeki her bir namespace için otomatik olarak bir paket oluşturulmakta ve client kodlarını temsil eden sınıflar bu paketlere atılmaktadır...</p>
         <a href="/wsimport-package-mapping">DAHA FAZLA</a>
         <span>22 Şubat 2016</span>
     </article>
@@ -41,7 +43,7 @@
                 Two declarations cause a collision in the ObjectFactory solution
             </a>
         </h2>
-        <p>Yıllardır farklı kişilerle farklı ortamlarda "Native Select mi yoksa Custom Select mi?" tartışmaları bıkmadan usanmadan tekrar tekrar yapıldı ve yapılmaya devam ediyor. Bir sürü Front-End'çi ile tasarımcının arası bu tartışmalar sebebiyle açıldı. Kimi İyi'yi, kimi Kötü'yü kimi de Çirkin'i savundu. Artık bu tartışmalar...</p>
+        <p>Wsimport komutu koşulurken karşılaştığım bir sorunun çözümünü paylaşmak istedim. Sorun, “Two declarations cause a collision in the ObjectFactory class” hatasıdır...</p>
         <a href="/wsimport-two-declarations">DAHA FAZLA</a>
         <span>29 Ocak 2016</span>
     </article>
@@ -51,7 +53,7 @@
                 Wsimport Underscore Configuration with JAXB
             </a>
         </h2>
-        <p>SAFE’in (sahibinden.com geliştirme ortamının) ilk versiyonunu Ağustos 2013’te hazırlanmaya başlamıştık. O sıralarda dosyaların sayısı, dosya boyutları ve Grunt task’larımızın sayısı bugüne göre çok daha azdı. Dolayısıyla Grunt task’larımız çok kısa sürelerde tamamlanıyordu ve iyileştirme yapmak gibi bir ihtiyaç hissedilmemişti...</p>
+        <p>“Two declarations cause a collision in the ObjectFactory class” hatasının neden kaynaklandığını ve çözüm yöntemlerinden bazılarını <a href="./wsimport-two-declarations.html">şu</a> yazımda paylaşmıştım...</p>
         <a href="/wsimport-underscore-configuration">DAHA FAZLA</a>
         <span>27 Ağustos 2015</span>
     </article>
@@ -61,7 +63,7 @@
                 How to Sort a Set Collection in JAVA ?
             </a>
         </h2>
-        <p>AngularJS kullanılan bir projenin derlenmiş HTML kodlarını incelediğinizde hata ayıklama (debug) için eklenmiş bilgileri görürsünüz. Bu bilgiler elemanlara class olarak eklenir. Mesela normalde kodunuz aşağıdaki gibiyken...</p>
+        <p>If your set is not TreeSet implementation, you have the following options to sort your set collection. For example, suppose that you have a HashSet collection as shown below...</p>
         <a href="/sort-set-collection">DAHA FAZLA</a>
         <span>3O Mart 2015</span>
     </article>
@@ -91,7 +93,7 @@
                 How to Reload Page in GWT ?
             </a>
         </h2>
-        <p>Bu yazıda HTML, CSS ve JavaScript ile hazırlanmış web sitesini hosting/barındırma ücreti ödemeden Github aracılığıyla ve kendi domaininiz/alan adınız üzerinden nasıl yayınlayabileceğinizi anlatmaya çalışacağım....</p>
+        <p>GWT ile web uygulaması geliştirirken, muhtemelen kullanılacak olan komutlardan bir tanesi de, üzerinde çalışılan sayfanın belli bir anda yenilenmek istenmesidir. Bunun için GWT’de kullanılan kod şu şekildedir...</p>
         <a href="/gwt-reload-page">DAHA FAZLA</a>
         <span>12 Ocak 2015</span>
     </article>
@@ -101,7 +103,7 @@
                 java.lang.IllegalArgumentException: No enum const class solution in GWT
             </a>
         </h2>
-        <p>Yazılım geliştiricilerin sürekli yapması gereken ve kendini tekrar eden bazı sıkıcı görevleri vardır. Bu bazen dosya sıkıştırmak, bazen de kod derlemek olabiliyor ve geliştiriciler bunları her seferinde tekrar tekrar yaparak gereksiz bir zaman kaybı yaşıyor...</p>
+        <p>Yeni bir GWT projesi yarattınız ve bu projenizi Compile etmek istediniz. Eğer <strong>“java.lang.IllegalArgumentException: No enum const class com.google.gwt.dev.js.JsStackEmulator$StackMode.NATIVE”</strong> hatasıyla karşılaşırsanız...</p>
         <a href="/gwt-no-enum-const">DAHA FAZLA</a>
         <span>3 Temmuz 2014</span>
     </article>
@@ -111,7 +113,7 @@
                 Couldnt find host pages solution in GWT
             </a>
         </h2>
-        <p>Yazılımcıların yıllardır sürdürdüğü editör kavgalarını bilmeyeniniz yoktur. Herkes kendi kullandığı editörü savunur, karşılıklı editör özellikleri yarıştırılır ve bu bitmek bilmeyen tartışma uzar, uzar, uzar…</p>
+        <p>Yeni bir GWT uygulaması yarattınız ve bu uygulamanızı çalıştırmak istediniz. Projenizi sağ tıkladınız ve “Run As-&gt; Web Application” seçeneğini seçtiniz. Eğer <strong>“Couldnt find any host pages in project”</strong> uyarı ekranıyla karşılaşırsanız çözüm yolu şu şekildedir...</p>
         <a href="/gwt-couldnt-find-any-host-pages">DAHA FAZLA</a>
         <span>20 Mayıs 2014</span>
     </article>
@@ -121,7 +123,7 @@
                 GWT Compile Problem & Solution
             </a>
         </h2>
-        <p>Yazılımcıların yıllardır sürdürdüğü editör kavgalarını bilmeyeniniz yoktur. Herkes kendi kullandığı editörü savunur, karşılıklı editör özellikleri yarıştırılır ve bu bitmek bilmeyen tartışma uzar, uzar, uzar…</p>
+        <p>You may see the error message shown as below while you compile your GWT project and you are unable to compile it...</p>
         <a href="/gwt-compile-problem">DAHA FAZLA</a>
         <span>20 Mayıs 2014</span>
     </article>
@@ -131,7 +133,7 @@
                 How to Get API Access with Google API ?
             </a>
         </h2>
-        <p>Yazılımcıların yıllardır sürdürdüğü editör kavgalarını bilmeyeniniz yoktur. Herkes kendi kullandığı editörü savunur, karşılıklı editör özellikleri yarıştırılır ve bu bitmek bilmeyen tartışma uzar, uzar, uzar…</p>
+        <p>How to get API access for Google APIs?...</p>
         <a href="/api-access-for-google-api">DAHA FAZLA</a>
         <span>20 Mayıs 2014</span>
     </article>
@@ -141,7 +143,7 @@
                 CRUD for Other Schemas other than Default Scheman in .NET Entity Framework
             </a>
         </h2>
-        <p>Yazılımcıların yıllardır sürdürdüğü editör kavgalarını bilmeyeniniz yoktur. Herkes kendi kullandığı editörü savunur, karşılıklı editör özellikleri yarıştırılır ve bu bitmek bilmeyen tartışma uzar, uzar, uzar…</p>
+       <p>In .NET Entity Framework, when you create a model from Oracle database, you should give an username and password info about the database where you wish to connect. This information is stored in connection string tab in app.config file as shown below...</p>
         <a href="/crud-for-other-schemas-entity-framework">DAHA FAZLA</a>
         <span>20 Mayıs 2014</span>
     </article>
